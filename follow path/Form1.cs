@@ -26,17 +26,17 @@ namespace follow_path
             }
             for (int i = 0; i < 20; i++)
             {
-                pictureBox1.Location = new Point(pictureBox1.Location.X, pictureBox1.Location.Y+4);
+                pictureBox1.Location = new Point(pictureBox1.Location.X, pictureBox1.Location.Y + 4);
                 await Task.Delay(100);
             }
             for (int i = 0; i < 20; i++)
             {
-                pictureBox1.Location = new Point(pictureBox1.Location.X + 4, pictureBox1.Location.X);
+                pictureBox1.Location = new Point(pictureBox1.Location.X - 4, pictureBox1.Location.Y);
                 await Task.Delay(100);
             }
             for (int i = 0; i < 20; i++)
             {
-                pictureBox1.Location = new Point(pictureBox1.Location.Y + 4, pictureBox1.Location.Y);
+                pictureBox1.Location = new Point(pictureBox1.Location.X, pictureBox1.Location.Y - 4);
                 await Task.Delay(100);
             }
         }
