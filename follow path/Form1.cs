@@ -68,5 +68,15 @@ namespace follow_path
                 await Task.Delay(100);
             }
         }
+
+        private async void button4_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < 5; i++)
+            {
+                pictureBox1.Location = new Point(pictureBox1.Location.X + 5, pictureBox1.Location.Y);
+                await Task.Delay(Convert.ToInt32(textBox1.Text));
+            } 
+
+        }
     }
 }
