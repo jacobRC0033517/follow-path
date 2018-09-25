@@ -71,6 +71,15 @@ namespace follow_path
 
         private async void button4_Click(object sender, EventArgs e)
         {
+            int d;
+            try
+            {
+                d = Convert.ToInt32(textBox1.Text);
+            }
+            catch
+            {
+                MessageBox.Show("smart guy, use numbers");
+            }
             for (int i = 0; i < 5; i++)
             {
                 pictureBox1.Location = new Point(pictureBox1.Location.X + 5, pictureBox1.Location.Y);
