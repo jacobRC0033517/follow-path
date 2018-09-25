@@ -79,11 +79,12 @@ namespace follow_path
             catch
             {
                 MessageBox.Show("smart guy, use numbers");
+                d = 10;
             }
             for (int i = 0; i < 5; i++)
             {
                 pictureBox1.Location = new Point(pictureBox1.Location.X + 5, pictureBox1.Location.Y);
-                await Task.Delay(Convert.ToInt32(textBox1.Text));
+                await Task.Delay(d);
             } 
 
         }
